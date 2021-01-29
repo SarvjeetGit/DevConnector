@@ -1,3 +1,6 @@
 {
-    "mongoURI":"mongodb+srv://Sarvjeet99:Sarvjeet99@devconnector.utaoy.mongodb.net/<dbname>?retryWrites=true&w=majority"
+    "mongoURI":"mongodb+srv://Sarvjeet99:Sarvjeet99@devconnector.utaoy.mongodb.net/<dbname>?retryWrites=true&w=majority",
+    "jwtSecret":"mysecrettoken",
+    "githubClientId":"879247515a89d49056da",
+    "githubSecret":"dab6cf074984b6d9e8cdf7e514311fafddef028a"
 }

@@ -9,6 +9,8 @@ const connectDB = async () => {
         await moongose.connect(db, {
             useNewUrlParser: true,
             useUnifiedTopology: true,
+            useCreateIndex: true,
+            useFindAndModify: false,
         });
 
         console.log('MongoDb Connected..');

@@ -19,6 +19,7 @@ import setAuthToken from './utils/setAuthToken';
 //integrating redux with react
 import { Provider } from 'react-redux';
 import store from './store';
+import Posts from './components/posts/Posts';
 
 if (localStorage.token) {
     setAuthToken(localStorage.token);
@@ -78,6 +79,11 @@ const App = () => {
                                 exact
                                 path='/add-education'
                                 component={AddEducation}
+                            />
+                            <PrivateRoute
+                                exact
+                                path='/posts'
+                                component={Posts}
                             />
                         </Switch>
                     </section>

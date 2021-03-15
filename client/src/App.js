@@ -20,6 +20,7 @@ import setAuthToken from './utils/setAuthToken';
 import { Provider } from 'react-redux';
 import store from './store';
 import Posts from './components/posts/Posts';
+import Post from './components/post/Post';
 
 if (localStorage.token) {
     setAuthToken(localStorage.token);
@@ -84,6 +85,11 @@ const App = () => {
                                 exact
                                 path='/posts'
                                 component={Posts}
+                            />
+                            <PrivateRoute
+                                exact
+                                path='/posts/:id'
+                                component={Post}
                             />
                         </Switch>
                     </section>
